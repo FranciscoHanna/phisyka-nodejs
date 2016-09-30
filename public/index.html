@@ -1,0 +1,57 @@
+<!DOCTYPE html>  
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->  
+<head>  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testing</title>
+
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>  
+<body ng-controller="ArduController">  
+
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> -->
+        <a class="navbar-brand" href="#">Phisyka</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!-- <li><a href="#">Exp1</a></li>
+          <li><a href="#">Exp2</a></li>
+          <li><a href="#">Exp3</a></li> -->
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="container">
+    <div class="jumbotron">
+    <table></table>
+
+      <p>Tiempo en A: </label>  {{ timeA }}ms
+      <p>Tiempo en B: </label>  {{ timeB }}ms
+      <!-- <p>Tiempo entre A y B: </label>  {{ timeA }}ms -->
+    </div>
+  </div>
+
+  <script src="bower_components/socket.io-client/socket.io.js"></script>
+  <script src="bower_components/angular/angular.js"></script>  
+  <script src="bower_components/angular-socket-io/socket.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+  <script src="app.js"></script>
+  <script src="services/socket.factory.js"></script>
+</body>

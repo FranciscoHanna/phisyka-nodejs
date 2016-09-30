@@ -1,0 +1,31 @@
+{
+  "name": "Phisyka",
+  "description": "App for physics experimentation",
+  "main": "",
+  "keywords": [
+    "app",
+    "physics",
+    "experimentation",
+    "web",
+    "app"
+  ],
+  "authors": [
+    "Francisco Hanna"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/FranciscoHanna",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "socket.io-client": "^1.4.8",
+    "angular-socket-io": "^0.7.0",
+    "bootstrap": "^3.3.7"
+  }
+}
