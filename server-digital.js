@@ -5,6 +5,7 @@ var httpServer = require("http").createServer(app);
 var five = require("johnny-five");  
 var io = require('socket.io')(httpServer);
 
+var ip = "192.168.10.200";
 var port = 3000;
 
 app.use(express.static(__dirname + '/public'));
@@ -14,8 +15,8 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-httpServer.listen(port, function(){
-    console.log('Server available at http://localhost:' + port);  
+httpServer.listen(port, ip, function(){
+    console.log('Server available at http://' + ip + ":"+ port);  
 });  
 
 
